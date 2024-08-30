@@ -29,6 +29,7 @@ body {
     display: flex;
     font-family: myFont;
     font-weight: 500;
+    flex-direction: column;
 }
 
 .bk-whit,
@@ -44,7 +45,7 @@ body {
 .bk-whit {
     background-color: hsl(0, 0%, 100%);
     width: 373px;
-    height: 600px;
+
     margin: auto;
     top: 0px;
     padding: 20px;
@@ -62,7 +63,7 @@ body {
 h4,
 p,
 h2 {
-    margin: 20px 0px;
+    margin: 10px 0px;
 }
 
 h2:hover {
@@ -115,13 +116,18 @@ h2 {
 }
 
 .name div {
-    margin-top: 24px;
+    margin: 15px;
+}
+
+.name img {
+    width: 40px;
+    height: 40px;
 }
 
 @media screen and (max-width: 376px) {
     .bk-whit {
         max-width: 335px;
-        max-height: 515px;
+
         padding: 10px;
         box-shadow: 5px 5px;
     }
