@@ -1,0 +1,139 @@
+html {
+    height: 100%;
+}
+
+:root {
+    --yellow: hsl(47, 88%, 63%);
+    --white: #ffffff;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: myFont-italic;
+    src: url(../assets/fonts/Figtree-Italic-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: myFont;
+    src: url(../assets/fonts/Figtree-VariableFont_wght.ttf);
+}
+
+body {
+    height: 100%;
+    background-color: var(--yellow);
+    display: flex;
+    font-family: myFont;
+    font-weight: 500;
+}
+
+.bk-whit,
+.image {
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+
+.bk-whit {
+    background-color: hsl(0, 0%, 100%);
+    width: 373px;
+    height: 600px;
+    margin: auto;
+    top: 0px;
+    padding: 20px;
+
+    border: 1px solid black;
+    box-shadow: 3px 3px;
+}
+
+.image {
+    display: flex;
+
+    margin: auto;
+}
+
+h4,
+p,
+h2 {
+    margin: 20px 0px;
+}
+
+h2:hover {
+    color: hsl(47, 88%, 63%);
+    cursor: pointer;
+}
+
+h4 {
+    font-family: myFont;
+    background-color: hsl(47, 88%, 63%);
+    width: fit-content;
+    padding: 5px;
+    margin-top: 20px;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+
+}
+
+h2,
+h4,
+.name {
+    font-family: myFont;
+    font-weight: 800;
+}
+
+p {
+    font-size: 16px;
+}
+
+.p-2 {
+    color: hsl(0, 0%, 42%);
+
+}
+
+.p-1 {
+    color: hsl(0, 0%, 7%);
+
+}
+
+h2 {
+    font-weight: 800;
+}
+
+.name {
+    display: flex;
+    padding-top: 20px;
+}
+
+.name div {
+    margin-top: 24px;
+}
+
+@media screen and (max-width: 376px) {
+    .bk-whit {
+        max-width: 335px;
+        max-height: 515px;
+        padding: 10px;
+        box-shadow: 5px 5px;
+    }
+
+    .image {
+        max-width: 300px;
+
+    }
+
+    .name {
+        padding-top: 0px;
+    }
+
+
+}
